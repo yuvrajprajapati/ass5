@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 8vh;
+            padding: 1vh 7vw;
+
+
+
+
+
+        }
+
+        #logo {
+            width: 5vw;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            list-style-type: none;
+
+
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: #1f5651;
+
+        }
+
+        #log::after{
+            content: '';
+            display: block;
+            height:0.2vw;
+            width: 0;
+            background: #1f5651;
+            transition: all 0.5s;
+        }
+        #log:hover::after{
+            width: 100%;
+        }
+
+        #post {
+            background-color: #1f5651;
+            color: white;
+            padding: 1.6vh 2vw;
+            margin-left: 5vw;
+            font-size: 1.5vw;
+            font-weight: bold;
+            cursor: pointer;
+
+        }
+
+        /* button{
+            border: none;
+            margin-left: 0px;
+        } */
+        #log {
+            font-size: 1.7vw;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        main {
+
+            border-top: 1px solid gray;
+
+
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10vh 8vw;
+        }
+
+        .left {
+            width: 60%;
+        }
+
+        h1 {
+            font-size: 4.7vw;
+            line-height: 4.9vw;
+            font-weight: bold;
+        }
+
+        p {
+
+            margin-top: 2vw;
+            font-size: 1.5vw;
+            line-height: 2vw;
+
+        }
+
+        .right {
+            margin-top: 5vh;
+        }
+
+        .in {
+
+            display: flex;
+            flex-direction: column;
+            width: 22vw;
+            justify-content: space-evenly;
+
+            margin-top:2vw;
+            height: 10vw;
+            
+
+        }
+
+        #mail {
+            height: min-content;
+            padding: 0.5vh 0.7vw;
+            font-size: 1.2vw;
+            cursor: pointer;
+
+        }
+
+        button {
+            display: block;
+            width: 22vw;
+            padding: 0.7vh 0.7vw;
+            height: min-content;
+            background-color: #1f5651;
+            color: white;
+            border: none;
+            font-size: 1.2vw;
+            cursor: pointer;
+
+
+        }
+
+       
+        #get:hover {
+            color: #31a59b;
+        }
+
+        button:hover,
+        #post:hover {
+            background-color: #31a59b;
+
+        }
+        #get:active,
+        #log:active{
+            color: #6a6d6d;
+            
+        }
+
+        button:active,
+        #post:active {
+            background-color: #6a6d6d;
+        }
+
+        #get {
+            color: #1f5651;
+            text-decoration: none;
+        }
+
+        #img {
+            max-width: 30vw;
+        }
+
+
+
+
+        @media only screen and (max-width:913px) {
+            main {
+                padding: 4vh 7vw;
+            }
+
+            header {
+                height: 4vh;
+                padding: 1vh 8vw;
+            }
+
+            #post {
+                padding: 1.2vh 1.9vw;
+            }
+
+            #mail {
+                height: min-content;
+                padding: 0.2vh 0.7vw;
+                font-size: 1.2vw;
+
+            }
+
+            #logo {
+                width: 4vw;
+            }
+        }
+
+        @media only screen and (min-width:270px) and (max-width:560px) {
+
+
+            #logo {
+                width: 8vw;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="logo.png" alt="logo" id="logo">
+        <ul>
+            <li><a href="#" id="log">Log in Or Sign up</a></li>
+            <li><a href="#" id="post">Post a Job</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="left">
+            <h1>Find the Best Content Writing Jobs</h1>
+            <p>Paid content writing jobs to work from home, remotely, freelance, contract, and full-time. Join our
+                weekly newsletter.</p>
+            <div class="in">
+                <input type="text" placeholder="Your Email Address" id="mail" required>
+                <label for="mail"><button>Send Me Writing Jobs!</button></label>
+            </div>
+            <p>or &#128073; <a href="#" id="get"> get daily jobs newsletter</a> by becoming an early-bird member</p>
+
+
+        </div>
+        <div class="right">
+            <img src="image.jpg" alt="image" id="img">
+        </div>
+    </main>
+</body>
+
+</html>
